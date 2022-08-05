@@ -45,14 +45,20 @@ i{
 }
 
 .button{
-    /* background-color: #232f3e; */
-    background-image: linear-gradient(#232f3e,gray, #232f3e);
+    background-image: linear-gradient(#232f3e,rgb(20, 19, 19), #232f3e);
     border-radius: 1rem;
     color: white;
     max-width: 10rem;
     margin-top: 0.5rem;
     padding: 0.5rem;
 }
+
+.button:hover{
+    background-image: linear-gradient(#232f3e,gray, #232f3e);
+    border-radius: 1rem;
+    color: white;
+}
+
 
 .nav__auth{
     display: flex;
@@ -99,17 +105,23 @@ a, li{
 }
 
 .search-bar button{
-    background-color: #232f3e38;
+    background-color: #232f3ec2;
     margin-right: 0.5rem;
     border: 0;
     border-radius: 50%;
     width:2rem;
-    height: 2rem
+    height: 2rem;
 }
 
-.search-bar button i{
-    color: #232f3e;
+.search-bar button:hover{
+    background-color: #232f3ec2;
+    margin-right: 0.5rem;
+    border: 0;
+    border-radius: 50%;
+    width:2.4rem;
+    height: 2.4rem;
 }
+
 
 .main{
     grid-area: main;
@@ -300,7 +312,7 @@ table{
 }
 
 .nav__link{
-    transition: font-size 2s;
+    transition: font-size 0.5s;
 }
 
 .nav__link:hover{
@@ -363,7 +375,7 @@ table{
 
     .icon{
         font-size:x-large;
-        transition: font-size 2s;
+        transition: font-size 0.5s;
     }
 
     .icon:hover{
